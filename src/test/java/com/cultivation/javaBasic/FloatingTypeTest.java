@@ -15,7 +15,7 @@ class FloatingTypeTest {
 
         // TODO: Please change the result to pass the test.
         // <!--start
-        final int expected = (int)floatingPointNumber;
+        final int expected = (int)floatingPointNumber;;
         // --end-->
 
         assertEquals(expected, integer);
@@ -63,12 +63,12 @@ class FloatingTypeTest {
     @SuppressWarnings("unused")
     private boolean isNan(double realNumber) {
         // TODO: please find the method that performs this operation.
-        throw new NotImplementedException();
+        return Double.isNaN(realNumber);
     }
 
     @SuppressWarnings("unused")
     private boolean isInfinity(double realNumber) {
         // TODO: please find the method that perform this operation.
-        throw new NotImplementedException();
+        return Double.isInfinite(realNumber);
     }
 }
